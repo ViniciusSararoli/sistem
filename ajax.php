@@ -8,4 +8,3 @@ switch ($_REQUEST['action']) {
     # code...
     break;
 }
-?>
