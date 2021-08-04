@@ -1,12 +1,15 @@
 <?php
 class Controller
 {
-  public function actionController($action)
+  public function actionController($action,$smarty)
   {
     include_once("config.php");
 
     //if(!($_SESSION['adm']['id']>0)) {
-    $bd = new BD();
+      $smarty->caching = true;
+      $smarty->assign("action".$action);
+
+      $bd = new BD();
     //}
 
     switch ($action) {
@@ -18,7 +21,7 @@ class Controller
         break;
       default:
         //if(!($_SESSION['adm']['id']>0)) {
-        header("Location: http://127.0.0.1:5500/view/index.html");
+        $smarty->display("index.tpl");
         //}
         break;
     }
