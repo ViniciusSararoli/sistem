@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Login</title>
+    <title>Login</title>
 
     <!-- Custom fonts for this template-->
     <link href="view/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -41,15 +41,15 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Bem vindo(a)!</h1>
                                     </div>
-                                    <form class="user">
+                                    <form class="user" action="login" method="post">
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Endereço de e-mail...">
+                                                placeholder="Endereço de e-mail..." name="email">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Senha">
+                                                id="exampleInputPassword" placeholder="Senha" name="password">
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
@@ -58,9 +58,9 @@
                                                     mim</label>
                                             </div>
                                         </div>
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
+                                        <button class="btn btn-primary btn-user btn-block">
                                             Entrar
-                                        </a>
+                                        </button>
                                     </form>
                                     <br>
                                     <div class="text-center">

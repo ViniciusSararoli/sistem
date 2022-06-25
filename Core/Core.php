@@ -16,10 +16,10 @@
 
           array_shift($url);
 
-          if () 
+          /* if () 
           {
 
-          }
+          } */
         }
     }
     
